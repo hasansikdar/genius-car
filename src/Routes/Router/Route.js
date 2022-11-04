@@ -12,6 +12,7 @@ import Signup from '../../Pages/Signup/Signup';
 import Checkout from '../../Pages/Checkout/Checkout';
 import Orders from '../../Pages/Orders/Orders';
 import PrivateRoute from '../../PrivateRoute/PrivateRoute';
+import Profile from '../../Pages/Profile/Profile';
 
 
 export const router = createBrowserRouter([
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
             {
                 path: '/home',
                 element: <Home></Home>
+            },
+            {
+                path:'/profile',
+                element: <Profile></Profile>
             },
             {
                 path: '/about',
@@ -53,7 +58,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/services/:id',
-                element: <Checkout></Checkout>,
+                element: <PrivateRoute><Checkout></Checkout></PrivateRoute>,
                 loader: ({params}) => fetch(`https://genius-car-server-virid.vercel.app/services/${params.id}`)
             },
             {

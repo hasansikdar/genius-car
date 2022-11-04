@@ -7,7 +7,7 @@ import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
     const [error, setError] = useState('');
-    const { login, signupwithOtherAccount } = useContext(AuthContextProvider)
+    const { login, signupwithOtherAccount, resetPassword } = useContext(AuthContextProvider)
     const googleProvider = new GoogleAuthProvider();
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
@@ -37,6 +37,17 @@ const Login = () => {
         .then(error => setError(error.messege))
 
     }
+    const handleResetPassword = () =>{
+        const emailValue = window.prompt('please enter your email');
+        if(emailValue){
+            resetPassword(emailValue)
+            .then(res => {
+                alert(`Please Check Your Email Please ${emailValue}`)
+            })
+            .then(error => console.log(error))
+        }
+
+    }
 
     return (
         <div className="hero  py-10">
@@ -62,7 +73,7 @@ const Login = () => {
                                 </label>
                                 <input name="password" type="password" placeholder="Password" className="input input-bordered rounded" required />
                                 <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forget Password</a>
+                                    <a onClick={handleResetPassword} href="#" className="label-text-alt link link-hover">Forget Password</a>
                                 </label>
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">{error}</a>
