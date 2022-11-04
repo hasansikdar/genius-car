@@ -1,0 +1,11 @@
+.header-banner {
+    margin:50px 0;
+    border-radius:20px;
+}
+.header-banner img {
+    border-radius:20px;
+}
+.header-banner .carousel-item img {
+    filter: brightness(50%);
+    max-height:90vh;
+}

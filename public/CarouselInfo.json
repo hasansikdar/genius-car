@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "prev":"6",
+        "next":"2",
+        "img": "https://i.ibb.co/Xk27Rr7/1.jpg",
+        "title": "Affortable price for car servicing",
+        "bannerDetails": "There are many variations of Passeges of available, but the Majority Have suffered Alteration In some Form"
+    },
+    {
+        "id": "2",
+        "prev":"1",
+        "next":"3",
+        "img": "https://i.ibb.co/4sDdWkS/2.jpg",
+        "title": "Affortable price for car servicing",
+        "bannerDetails": "There are many variations of Passeges of available, but the Majority Have suffered Alteration In some Form"
+    },
+    {
+        "id": "3",
+        "prev":"2",
+        "next":"4",
+        "img": "https://i.ibb.co/Dpd3Xr9/3.jpg",
+        "title": "Affortable price for car servicing",
+        "bannerDetails": "There are many variations of Passeges of available, but the Majority Have suffered Alteration In some Form"
+    },
+    {
+        "id": "4",
+        "prev":"3",
+        "next":"5",
+        "img": "https://i.ibb.co/tMTrcgX/4.jpg",
+        "title": "Affortable price for car servicing",
+        "bannerDetails": "There are many variations of Passeges of available, but the Majority Have suffered Alteration In some Form"
+    },
+    {
+        "id": "5",
+        "prev":"4",
+        "next":"6",
+        "img": "https://i.ibb.co/JRS10JK/5.jpg",
+        "title": "Affortable price for car servicing",
+        "bannerDetails": "There are many variations of Passeges of available, but the Majority Have suffered Alteration In some Form"
+    },
+    {
+        "id": "6",
+        "prev":"5",
+        "next":"1",
+        "img": "https://i.ibb.co/sKZgvMn/6.jpg",
+        "title": "Affortable price for car servicing",
+        "bannerDetails": "There are many variations of Passeges of available, but the Majority Have suffered Alteration In some Form"
+    }
+]

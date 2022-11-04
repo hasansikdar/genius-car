@@ -1,0 +1,16 @@
+.social-icons span {
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    border:1px solid black;
+    display:inline-block;
+    text-align: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+}
+.social-icons span:hover {
+    background:gray;
+    color:white;
+}

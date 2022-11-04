@@ -6,8 +6,10 @@ import { Outlet } from 'react-router-dom';
 const Main = () => {
     return (
         <div>
-            <Header></Header>
-            <div>
+            <div className='main-container'>
+                <Header></Header>
+            </div>
+            <div className='main-container'>
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>
