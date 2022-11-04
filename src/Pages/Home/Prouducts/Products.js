@@ -4,7 +4,7 @@ import Product from './Product/Product';
 const Products = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('https://genius-car-server-virid.vercel.appproducts')
+        fetch('https://genius-car-server-virid.vercel.app/products')
             .then(res => res.json())
             .then(data => {
                 if (data.length > 6) {

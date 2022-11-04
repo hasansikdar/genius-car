@@ -5,14 +5,14 @@ import OrdersRow from './OrdersRow';
 const Orders = () => {
     const { user } = useContext(AuthContextProvider);
     const [orders, setOrders] = useState([]);      
-    const url = `https://genius-car-server-virid.vercel.apporders?email=${user?.email}`
+    const url = `https://genius-car-server-virid.vercel.app/orders?email=${user?.email}`
 
 
 
     const handleDelete = id => {
         const agree = window.confirm('Are you Sure You want to Delete ?');
         if(agree){
-            fetch(`https://genius-car-server-virid.vercel.apporders/${id}`, {
+            fetch(`https://genius-car-server-virid.vercel.app/orders/${id}`, {
                 method: "DELETE",
             })
             .then(res => res.json())
@@ -26,7 +26,7 @@ const Orders = () => {
         }
     }
     const handleUpdateStatus = id =>{
-        fetch(`https://genius-car-server-virid.vercel.apporders/${id}`,{
+        fetch(`https://genius-car-server-virid.vercel.app/orders/${id}`,{
             method: "PATCH",
             headers: {
                 'content-type':'application/json'

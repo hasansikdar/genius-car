@@ -24,7 +24,7 @@ const Checkout = () => {
             message,
             serviceName: title,
         }
-        fetch('https://genius-car-server-virid.vercel.apporders', {
+        fetch('https://genius-car-server-virid.vercel.app/orders', {
             method: 'POST',
             headers: {
                 'content-type':'application/json'

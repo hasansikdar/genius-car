@@ -4,7 +4,7 @@ import Service from './Service/Service';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('https://genius-car-server-virid.vercel.appservices')
+        fetch('https://genius-car-server-virid.vercel.app/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
